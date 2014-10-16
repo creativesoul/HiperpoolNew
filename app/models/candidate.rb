@@ -4,6 +4,7 @@ class Candidate < ActiveRecord::Base
   validates :first_name, :last_name, :email, :city, :country, :presence => true
   def self.countries
     [ 
+      {name: 'United Kingdom', code: 'GB'}, 
       {name: 'Afghanistan', code: 'AF'}, 
       {name: 'Åland Islands', code: 'AX'}, 
       {name: 'Albania', code: 'AL'}, 
@@ -232,7 +233,7 @@ class Candidate < ActiveRecord::Base
       {name: 'Uganda', code: 'UG'}, 
       {name: 'Ukraine', code: 'UA'}, 
       {name: 'United Arab Emirates', code: 'AE'}, 
-      {name: 'United Kingdom', code: 'GB'}, 
+      
       {name: 'United States', code: 'US'}, 
       {name: 'United States Minor Outlying Islands', code: 'UM'}, 
       {name: 'Uruguay', code: 'UY'}, 
