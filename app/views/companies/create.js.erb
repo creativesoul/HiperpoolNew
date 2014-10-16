@@ -1,0 +1,5 @@
+<% if @company.errors.any? %>
+  $("#company_error").html('<%= escape_javascript render :partial => "/companies/error" %>');
+<% else %>
+  window.location.reload(true);
+<% end %>

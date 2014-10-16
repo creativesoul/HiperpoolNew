@@ -1,0 +1,10 @@
+<% if @candidate.errors.any? %>
+  <div id ="error_explanation">
+    <h5><%= pluralize(@candidate.errors.count, "error") %> prohibited this candidate from being saved.</h5>
+    <ul>
+      <% @candidate.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div><br/>
+<% end %>

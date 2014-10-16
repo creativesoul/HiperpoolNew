@@ -1,0 +1,5 @@
+<% if @candidate.errors.any? %>
+  $("#candidate_error").html('<%= escape_javascript render :partial => "/candidates/error" %>');
+<% else %>
+  window.location.reload(true);
+<% end %>

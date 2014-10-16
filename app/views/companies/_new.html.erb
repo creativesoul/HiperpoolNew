@@ -1,0 +1,47 @@
+<div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Sign up As a Company</h3>
+  </div>
+  <%= form_for(@company,:remote => true) do |f| %>
+    <div class="modal-body">
+
+      <div id='company_error'>
+      </div>
+
+      <div class='row'>
+        <div class='span3'>
+          <%= f.text_field :first_name,:placeholder => "FIRST NAME" %>
+        </div>
+
+        <div class='span3'>
+          <%= f.text_field :last_name ,:placeholder => "LAST NAME"%>
+        </div>
+      </div><br>
+
+      <div class='row'>
+        <div class='span3'>
+          <%= f.text_field :company_name ,:placeholder => "COMPANY NAME"%>
+        </div>
+
+        <div class='span3'>
+          <%= f.text_field :position, :placeholder => "POSITION" %>
+        </div>
+      </div><br>
+
+      <div class='row'>
+        <div class='span6'>
+          <%= f.text_field :email,:placeholder => "EMAIL ADDRESS" %>
+        </div>
+      </div><br>
+      
+      <div class='row' style='text-align: center;'>
+        <div class='span6'>
+          <%= f.submit "SIGN UP AS A COMPANY" ,:class => "btn btn-primary"%>
+        </div>
+      </div>
+
+    </div>
+      
+  <% end %>
+</div>
