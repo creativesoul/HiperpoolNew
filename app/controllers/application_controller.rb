@@ -20,7 +20,11 @@ class ApplicationController < ActionController::Base
     if current_admin
       return "admin"
     else
-      return "application"
+      if devise_controller? and resource_name==:admin
+        return "admin"
+      else
+        return "application"
+      end
     end
   end
 end
