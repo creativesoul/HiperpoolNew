@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hiperpool Admin</title>
+    <%= stylesheet_link_tag  "/assets/admin-css/bootstrap.min.css", media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag "application", "/assets/admin-js/bootstrap.min.js", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  
+  <body>
+     <% if current_admin %>
+      <%= link_to "Logout", destroy_admin_session_path, :method => "DELETE" %>
+     <% end %>
+    
+    <div class="container" style="width:100%;">
+      <% if notice %>
+        <div class="alert alert-info" style="margin-top: 0px;">
+          <a class="close" data-dismiss="alert">×</a>
+          <strong><%= notice %></strong>
+        </div>
+      <% end %>
+      <% if alert %>
+        <div class="alert alert-error">
+          <a class="close" data-dismiss="alert">×</a>
+          <strong><%= alert %></strong>
+        </div>
+      <% end %>
+      <%= yield %>
+    </div>
+  </body>
+</html>

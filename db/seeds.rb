@@ -5,5 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-admin = SuperAdmin.new(:email => "admin@hiperpool.com", :password => "hiperpool123")
+admin = Admin.new(:email => "admin@hiperpool.com", :password => "hiperpool123")
 admin.save(:validate => false)

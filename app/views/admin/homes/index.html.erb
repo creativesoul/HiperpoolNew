@@ -1,0 +1,75 @@
+<div class="table-responsive">
+  Candidate List
+  
+  <table class="table table-bordered table-hover" border="1">
+    <tr class="success">
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>City</th>
+      <th>Country</th>
+      <th>Email</th>
+    </tr>
+    <% @candidates.each do |candidate| %>
+    <tr>
+      <td>
+        <%= candidate.first_name %>
+      </td>
+      
+      <td>
+        <%= candidate.last_name %>
+      </td>
+      
+      <td>
+        <%= candidate.city %>
+      </td>
+      
+      <td>
+        <%= candidate.country %>
+      </td>
+      
+      <td>
+        <%= candidate.email %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>
+
+<br/>
+
+<div>
+  Company List
+  
+  <table border="1">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>City</th>
+      <th>Country</th>
+      <th>Email</th>
+    </tr>
+    <% @companies.each do |company| %>
+    <tr>
+      <td>
+        <%= company.first_name %>
+      </td>
+      
+      <td>
+        <%= company.last_name %>
+      </td>
+      
+      <td>
+        <%= company.company_name %>
+      </td>
+      
+      <td>
+        <%= company.position %>
+      </td>
+      
+      <td>
+        <%= company.email %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>
