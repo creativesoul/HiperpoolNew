@@ -1,0 +1,146 @@
+@font-face {
+font-family: 'opensans';
+src: url('font/OpenSans.ttf') format('truetype') /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+font-family: 'opensansbold';
+src: url('font/OpenSans-Bold.ttf') format('truetype') /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+font-family: 'opensanssemibold';
+src: url('font/OpenSans-Semibold.ttf') format('truetype') /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    font-family:'opensans';
+    background: url(/assets/img/hiperpool-bg-img.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left:70px;
+}
+
+.coming-soon {
+    font-size: 15px;
+    display: block;
+    font-family: 'opensansbold';
+    margin-top:50px;
+    color:#003241;
+}
+.logo {
+    margin-top:200px;
+}
+
+.slogan {
+    color:#003241;
+    font-family:'opensanssemibold';
+    font-weight:normal;
+    margin-top:70px;
+}
+.button {
+    font-family:'opensans';
+    font-size:12pt;
+    padding-right:1rem;
+    padding-left:1rem;
+}
+
+.red {
+    background:#ff5756;
+}
+.green {
+    background:#1aa195;
+}
+.red:hover {
+    opacity:0.8;
+    background:#ff5756;
+}
+.green:hover {
+    opacity:0.8;
+    background:#1aa195;
+}
+
+h4 {
+    color:#444444;
+}
+ul.button-list{
+    list-style:none;
+    margin: 0;
+    margin-top:40px;
+
+}
+ul.button-list li {
+    float:left;
+    margin-right:15px;
+}
+footer {
+    color:white;
+    position:absolute;
+    bottom:20px;
+    margin-left:15px;
+}
+.reveal-modal {
+    width:600px;
+}
+.close-reveal-modal {
+    font-size:1.5rem;
+}
+form {
+    margin-top: 40px;
+    clear: both;
+    display: block;
+}
+select,
+input {
+    height:63px !important;
+    text-align:left;
+    background-color:white;
+    font-family: 'opensans';
+    color:#e5e5e5;
+    border-color:#e5e5e5 !important;
+    border-radius:5px !important;
+    box-shadow:none !important;
+}
+select {
+    color:#a9a9bb;
+}
+.reveal-modal p{
+    font-family: 'opensansbold';
+
+}
+
+button {
+    margin-top:30px !important;
+}
+@media only screen and (max-width:640px){
+    body {
+        background: url(/assets/img/hiperpool-bg-img.jpg);
+    }
+    .reveal-modal {
+        width:inherit;
+    }
+    footer {
+        color:white;
+        position:relative;
+        text-align:center;
+        bottom:inherit;
+        margin:0;
+        height: 30px;
+        clear: both;
+    }
+    .logo {
+        margin-top:80px;
+    }
+    ul.button-list li {
+        margin:0;
+        width:100%;
+
+    }
+    .button {
+        width:100%;
+    }
+    body {
+        padding:0;
+    }
+    } /* Define mobile styles */
