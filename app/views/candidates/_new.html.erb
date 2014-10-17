@@ -5,16 +5,16 @@
     </div>
 
     <div class="large-6 medium-6 column">
-      <%= f.text_field :first_name,:placeholder => "FIRST NAME" %>
+      <%= f.text_field :first_name,:placeholder => "FIRST NAME", :required => true %>
     </div>
 
     <div class="large-6 medium-6 column">
-      <%= f.text_field :last_name ,:placeholder => "LAST NAME"%>
+      <%= f.text_field :last_name ,:placeholder => "LAST NAME", :required => true%>
     </div>
 
 
     <div class="large-6 medium-6 column">
-      <%= f.text_field :city ,:placeholder => "CITY"%>
+      <%= f.text_field :city ,:placeholder => "CITY", :required => true%>
     </div>
 
     <div class="large-6 medium-6 column">
@@ -22,7 +22,7 @@
     </div>
 
     <div class="large-12 column">
-      <%= f.text_field :email, :placeholder => "EMAIL ADDRESS" %>
+      <%= f.text_field :email, :placeholder => "EMAIL ADDRESS", :required => true %>
     </div>
   </div>
 
