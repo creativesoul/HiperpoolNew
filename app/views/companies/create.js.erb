@@ -1,5 +1,6 @@
 <% if @company.errors.any? %>
   $("#company_error").html('<%= escape_javascript render :partial => "/companies/error" %>');
 <% else %>
+  alert("Thanks for signing up. You will receive an email shortly.");
   window.location.reload(true);
 <% end %>

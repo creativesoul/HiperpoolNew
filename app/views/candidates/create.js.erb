@@ -1,5 +1,6 @@
 <% if @candidate.errors.any? %>
   $("#candidate_error").html('<%= escape_javascript render :partial => "/candidates/error" %>');
 <% else %>
+  alert("Thanks for signing up, you will receive an email shortly.");
   window.location.reload(true);
 <% end %>
